@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: aliceblue; */
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 23, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/mountains-8344601_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* When image will be added */
+/* nav img{
+    width: 150px;
+} */
+
+nav a {
+    text-decoration: none;
+}
+
+nav a span {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+
+.text-box {
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: aliceblue;
+
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover {
+    border: 1px solid rgb(239, 113, 16);
+    background: rgb(239, 113, 16);
+    transition: 1s;
+}
+
+/* ----details---- */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.course h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p {
+    color: rgb(32, 36, 48);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: rgb(167, 211, 227);
+    border-radius: 10px;
+    margin-top: 5;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 2, 8, 0.2);
+
+}
+
+/* -----Call to action------ */
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/contact-us-2993000_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: aliceblue;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* -----footer----- */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(87, 181, 224);
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands {
+    color: black;
+    margin: 10px 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* =====sub header====== */
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/beach-1751455_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+}
+.box{
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px Orgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: 0 auto;
+    }
+    .box:hover input{
+    width: 100%;
+    }
+    .box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    }
+    .box a .fas{
+        color: #1daf;
+        font-size: 18px;
+        }
+
+.sub-header h1 {
+    margin-top: 100px;
+    font-size: 33px;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+.about-us h1{
+    font-size: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+
+/* ====sub-header-2==== */
+
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/email-4539382_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+}
+
+.sub-header2 h1 {
+    margin-top: 100px;
+    font-size: 33px;
+}
+
+/* ====sub-header-3==== */
+
+.sub-header3{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/email-4284157_1920.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+}
+
+.sub-header3 h1 {
+    margin-top: 100px;
+    font-size: 33px;
+}
+
+/* -----donation box------ */
+
+.donation-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    /* border-radius: 50px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.donation-box h2 {
+    color: #007BFF;
+}
+
+
+/* ====sub-header-4==== */
+
+.sub-header4{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/avatar-2191932_1921.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+}
+
+.sub-header4 h1 {
+    margin-top: 100px;
+    font-size: 33px;
+}
+
+.about-col1 .one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10% 5% 5%;
+    margin: 0%;
+    width: 50%;
+
+}
+
+.about-col1 .one img{
+    width: 15%;
+    height: 15%;
+    transition: 0.5s;
+}
+
+.about-col1 .one img:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 178, 248);
+}
